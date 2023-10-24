@@ -5,8 +5,7 @@ self.addEventListener('install', event => {
 		caches.open(cacheName)
 		.then(cache => cache.addAll([
 			'js\script.js',
-			'images\hello.png',
-			'manifest.json'
+			'images\hello.png'
 		]))
 	);
 });
